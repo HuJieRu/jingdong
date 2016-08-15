@@ -419,7 +419,7 @@ margin-right: 10px;
 /*商品列表*/
 .shopList{
 	position: relative;
-	z-index: -100;
+	
 }
 .shopList .leftArea{
 	width: 190px;
