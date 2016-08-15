@@ -1,0 +1,61 @@
+.copyright{
+	width: 100%;
+	
+	/*background-color: #0099FF;*/
+	margin-top: 10px;
+	clear: both;/*不清除浮动的话，在某些浏览器的某些版本上面会无法被顶下去*/
+	background: url(../img/tail/tail01.png) no-repeat top;
+}
+.copyright_top{
+	width: 1200px;
+	padding-top: 116px;
+	margin: 0 auto;
+	height: 160px;
+	border-bottom: 1px solid #ccc;
+}
+.copyright_top li{
+	list-style-type: none;
+	float: left;
+	width: 200px;/*只有设置了宽度为200px，内容就会被挤下来*/
+	
+	line-height: 20px;
+	font-family: "微软雅黑";
+}
+.copyright_top a{
+	text-decoration: none;
+	font-size: 18px;
+	
+	margin-bottom: 10px;
+	
+}
+/*后面的样式会覆盖前面的样式*/
+.copyright_top li ul li a{
+	font-size: 14px;
+}
+
+.copyright_footer{
+	
+	clear: both;
+	width: 65%;
+	height: 150px;
+	text-align: center;
+	padding-top: 20px;
+	margin:  0px  auto;
+
+}
+.copyright_footer p,.copyright_footer i{
+	float: left;
+	display: block;
+	padding: 5px 5px;
+}
+.copyright_footer i{
+	font-style: normal;
+}
+.copyright_footer ul{
+	width: 80%;
+	margin: 0 auto;
+}
+.copyright_footer li{
+	float: left;
+	padding: 5px 5px;
+}

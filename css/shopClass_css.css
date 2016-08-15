@@ -1,0 +1,132 @@
+
+/*.shopClass{width:190px;position:relative;top:-41px;background:#4593FD;z-index:1;box-shadow:4px 2px 5px rgba(0, 0, 0, 0.3);}*/
+/*总的构架商品弹出列表*/
+
+
+.shopClass .mod_cate_hd{
+	height:50px;
+	line-height:50px;
+	font-size:17px;
+	color:#FFFFFF;
+	text-indent:7px;
+	box-shadow:2px -1px 3px rgba(55,55,55,0.5);
+	background-color:#B1191A;
+	
+	}
+
+.mod_cate {
+	line-height: 35px;
+	text-align: left;
+	background-color: #C81623;
+	font-size: 13px;
+	
+}
+
+.mod_cate_title a{
+	padding-left: 10px;
+	color: #FFFFFF;
+}
+
+
+
+.mod_cate_title img {
+	float: right;
+	
+}
+
+
+ .mod_subcate{
+	display:none;
+	width:795px;
+	height:580px;
+	border:2px #C81623 solid;
+	background:#F7F7F7;
+	box-shadow:5px 5px 10px rgba(0, 0, 0, 0.4);
+	position:absolute;
+	z-index:-1;
+	top:49px;
+	left:188px;
+	overflow:hidden;
+	
+	}
+
+ .mod_subcate_main{
+	width:568px;
+	padding:0px 20px 1000px 20px;
+	margin-bottom:-1000px;
+	border-right:1px #ddd solid;
+	float:left;
+	}
+.mod_subcate_side{
+	width:176px;
+	padding-top:5px;
+	padding-left:10px;
+	padding-bottom:1000px;
+	margin-bottom:-1000px;
+	float:left;
+	}	
+.shopClass .on{
+	border-left: 1px solid #C81623;
+	border-bottom: 1px solid #C81623;
+	background:#F7F7F7;
+	}
+.shopClass .on  .mod_cate_title a{
+	color:#C81623;
+	}
+.shopClass .on  .mod_cate_title img{
+	display: none;
+	}
+.shopClass .on .mod_subcate{
+	display:block !important;
+	  
+	}
+	
+/*mod_subcate_main盒子里的最上一行*/	
+.a_row_top li{
+	margin: 10px 5px;
+	float: left;
+	
+}
+.a_row_top li a{
+	color: #FFFFFF;
+	background-color: #7C7171;
+	display: block;
+	float: left;
+	padding: 0 5px;
+	font-size: 12px;
+	line-height: 30px;
+	height: 30px;
+}
+.a_row_top li img{
+	float: right;
+	height: 30px;
+	background-color: #5C5251;
+} 
+
+
+/*其余行*/
+.a_row{
+	clear: both;
+}
+.a_row>a{
+	font-weight: 600;
+	background: url(../img/arrow_right.png) no-repeat center right;
+	padding-right: 25px;
+	display: inline-block;
+	float: left;
+	margin-right: 10px;
+	display: block;
+	
+}
+.a_row_content{
+	float: left;
+	border-bottom: 1px solid #E0DEDE;
+	
+}
+.a_row li{
+	float: left;
+	padding: 0 10px;
+	background: url(../img/icon/line.png) no-repeat center left;
+	
+}
+
