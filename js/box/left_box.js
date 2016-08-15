@@ -6,10 +6,10 @@ $(function(){
 			// 在标题栏显示滚动的距离
 			document.title = ling;
 			// 如果滚动距离大于1534的时候让滚动框出来
-			if(ling>1534){
+			if(ling>1460){
 				$('#left_box').show();
 			}
-			if(1534<ling && ling<2300){
+			if(1460<ling && ling<2300){
 				// 让第一层的数字隐藏，文字显示，让其他兄弟元素的li数字显示，文字隐藏
 				$('#left_box ul li').eq(0).find('.num').hide().siblings('.word').css('display','block');
 				$('#left_box ul li').eq(0).siblings('li').find('.num').css('display','block').siblings('.word').hide();

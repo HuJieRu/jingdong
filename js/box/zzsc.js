@@ -1,7 +1,7 @@
 $(function  () {
-	var imgs = $.makeArray($(".box img"));
+	var imgs = $.makeArray($(".box_show img"));
 	
-	$(".box").mouseout(function  () {
+	$(".box_show").mouseout(function  () {
 		  for (var i=0; i<imgs.length; i++){
 		  // 需要使用自定义的animate函数，不能使用jquery自带的animate函数
 			animate(imgs[i],{left:0,opacity:1},100);

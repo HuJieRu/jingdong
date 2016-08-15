@@ -1,8 +1,7 @@
 /* flexslider */
-
+/*主页焦点图*/
 .flexslider {
 	position: relative;
-	
 	overflow: hidden;
 	zoom: 1;
 }

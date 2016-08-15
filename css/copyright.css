@@ -37,6 +37,7 @@
 	
 	clear: both;
 	width: 65%;
+	min-width: 850px;
 	height: 150px;
 	text-align: center;
 	padding-top: 20px;

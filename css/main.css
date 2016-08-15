@@ -256,17 +256,20 @@ body a:hover{
 
 /*商品弹出列表见shopclass*/
 
+.banner_and_news{
+	min-width: 1000px;
+}
 
 /*banner部分*/
 
 .banner {
-	margin-bottom: 75px;
-	position: absolute;
+	margin-bottom: 25px;
+	
 width: 770px;
 	height: 500px;
 	
-	left: 80px;
-	margin-left: 200px;
+	left: 0px;
+	margin-left: 10px;
 	margin-top: 10px;
 	float: left;
 }
@@ -278,7 +281,7 @@ width: 770px;
 	width:205px;
 	height: 500px;
 float: right;
-margin-right: 80px;
+margin-right: 10px;
 	margin-top: 10px;
 	
 }
@@ -316,12 +319,12 @@ margin-right: 80px;
 .news_down{
 	position:relative;
 	}
-.tab_menu{
+.news_down .tab_menu{
 	float:left;
 	position:absolute;
 	z-index:1;
 	}
-.tab_menu li{
+.news_down .tab_menu li{
 	float:left;
 	width:50px;
 	height:30px;
@@ -332,10 +335,10 @@ margin-right: 80px;
 	cursor:pointer;
 	text-align:center;
 	}
-.tab_menu li:first-child{
+.news_down .tab_menu li:first-child{
 	border-left: 1px solid #ccc;
 }
-.tab_box{
+.news_down .tab_box{
 	width:100%-1;
 	height:240px;
 	clear:both;
@@ -344,20 +347,45 @@ margin-right: 80px;
 	border:1px solid #CCC;
 	background-color:#fff;
 	}
-.tab_menu .selected{
+.news_down .tab_menu .selected{
 	background-color:#fff;
 	cursor:pointer;
 	border-top: 2px solid #C81623;
 	}
-.hide{
+.news_down .hide{
 	display:none;
 	}
-.tab_box div{
+.news_down .tab_box div{
 	padding:10px;
 	} 
 	
 .news img{
 	margin-top: 35px;
+}
+
+/*商品展示焦点图*/
+.foucs_goods_show{
+	height: 160px;
+	padding-top: 10px;
+	
+	clear: both;
+}
+.foucs_goods_show .img_time{
+	width: 207px;
+	height: 149px;
+	float: left;
+}
+.foucs_goods_show .flexslider{
+	width:990px;
+	margin-left: 1px;
+	float: left;
+}
+.foucs_goods_show .flexslider .slides .img li{
+	float: left;
+}
+.foucs_goods_show .flexslider .slides .img li img{
+	margin: 0px 1px;
+	width: 245px;
 }
 /*第一组商品展示*/
 /*商品标题*/
@@ -441,74 +469,198 @@ margin-right: 80px;
 	border-right: 1px solid #999999;
 }
 /*第二组商品展示*/
-.box{
+.box_show{
 	
 	height:360px;
 	margin:0 auto;
 	margin-top:10px;
 	}
-.box .one{
+.box_show .one{
 	width:13%;
 	height:100%;
 	float:left;
 	}
-.box .one .top{
+.box_show .one .top{
 	width:100%;
 	height:50%;
 	overflow:hidden;
 	position:relative;
 	}
-.box .one .top .text{
+.box_show .one .top .text{
 	position:absolute;
 	z-index:1; 
 	left:10px;top:50%;
 	}
 
-.box .one .top .img{
+.box_show .one .top .img{
 	position:absolute; 
 	width:100%;
 	height:100%;	
 	background-color:black;
 	}
-.box .one .top .img img{
+.box_show .one .top .img img{
 	position:absolute;
 	left:0;top:0;
 	}
-.box .two{
+.box_show .two{
 	width:13%;
 	height:100%;
 	float:left;
 	position:relative;
 	overflow:hidden;
 }
-.box .two .text{
+.box_show .two .text{
 	position:absolute;
 	z-index:1; 
 	left:10px; top:50%;
 	}
-.box .two .img{
+.box_show .two .img{
 	position:absolute;
 	width:100%;
 	height:100%;
 	left:0;top:0;
 	background-color:black;
 	}
-.box .two .img img{
+.box_show .two .img img{
 	position:absolute;
 	}
 	
-.box .one .top .text strong,.box .two .text strong{
+.box_show .one .top .text strong,.box_show .two .text strong{
 	font-size: 16px;
 }
-.box .one .top .text p,.box .two .text p{
+.box_show .one .top .text p,.box_show .two .text p{
 	font-size: 14px;
 }
-.box .one .top .text>p:last-child,.box .two .text>p:last-child{
+.box_show .one .top .text>p:last-child,.box_show .two .text>p:last-child{
 	color: #C81623;
 }
-.box>img{
+.box_show>img{
 	width: 105px;
 	height: 100%;
 	display: block;
 	float: left;
+}
+
+ /*ad5*/
+.ad5{
+	margin-top: 10px;
+}
+.ad5 img{
+	width: 33%;
+}
+
+/*第三组商品展示*/
+.shop_show{
+	position:relative;
+	height: 680px;
+	margin-top: 20px;
+	}
+.shop_show .tab_menu{
+	float:left;
+	position:absolute;
+	left: 65%;
+	z-index:1;
+	}
+.shop_show .tab_menu li{
+	float:left;
+	padding: 0px 6px;
+	height:30px;
+	line-height:30px;
+	border:1px solid #ccc;
+	border-left:hidden;
+	border-bottom:0px;
+	cursor:pointer;
+	text-align:center;
+	}
+.shop_show .tab_menu li:first-child{
+	border-left: 1px solid #ccc;
+}
+.shop_show .tab_box{
+	width:100%-1;
+	height:650px;
+	clear:both;
+	top:30px;
+	position:relative;
+	border:1px solid #CCC;
+	background-color:#fff;
+	}
+.shop_show .tab_menu .selected{
+	background-color:#fff;
+	cursor:pointer;
+	border-top: 2px solid #C81623;
+	}
+.shop_show .hide{
+	display:none;
+	}
+.shop_show .tab .tab_box .content_left{
+	width: 27%;
+	height: 100%;
+	float: left;
+}
+.shop_show .tab .tab_box .content_left .one {
+	height: 349px;
+	overflow: hidden;
+	position: relative;
+	
+}
+.shop_show .tab .tab_box .content_left .one  img{
+	display: block;
+	position: absolute;
+	top: 0;
+	
+}
+.shop_show .tab .tab_box .content_left .one .down{
+	background: rgba(236,239,254,0.6);
+
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	height: 100px;
+	width: 100%;
+	
+}
+
+.shop_show .tab .tab_box .content_left .one .down a{
+		display: block;
+		float: left;
+		font-size: 18px;
+		width: 33%;
+		line-height: 50px;
+}
+.shop_show .tab .tab_box .content_left .two{
+	height: 150px;
+	background-color: #ECEFFE;
+}
+
+.shop_show .tab .tab_box .content_left .two li{
+	float: left;
+	margin: 10px 10px;
+
+}
+.shop_show .tab .tab_box .content_left .three {
+	overflow: hidden;
+	height:150px ;
+}
+.shop_show .tab .tab_box .content_left .three img{
+	width: 100%;
+}
+.shop_show .tab .tab_box .content_middle{
+	float: left;
+	width: 33%;
+	height: 100%;
+	
+}
+
+
+.shop_show .tab .tab_box .content_right{
+	width: 33%;
+	height: 100%;
+	float: right;
+	
+}
+.shop_show .tab .tab_box .content_right a{
+	display: block;
+	float: left;
+	width: 50%;
+	height: 25%;
 }
